@@ -1,0 +1,3 @@
+set(FMPEG_INSTALL_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+
+__cc_find(Fmpeg)
