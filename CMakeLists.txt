@@ -14,14 +14,14 @@ if(CC_INSTALL_FFMPEGLIB)
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/postproc.lib
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/swscale.lib
 				 )
-		set(DLLS ${CMAKE_CURRENT_SOURCE_DIR}/bin/avcodec-58.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avdevice-58.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avfilter-7.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avformat-58.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avutil-56.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/postproc-55.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swresample-3.lib
-				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swscale-5.lib
+		set(DLLS ${CMAKE_CURRENT_SOURCE_DIR}/bin/avcodec-58.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avdevice-58.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avfilter-7.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avformat-58.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/avutil-56.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/postproc-55.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swresample-3.dll
+				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swscale-5.dll
 				 )
 	else()
 	endif()
