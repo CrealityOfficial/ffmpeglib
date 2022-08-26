@@ -30,7 +30,6 @@ if(CC_INSTALL_FFMPEGLIB)
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat.so
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil.so
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswresample.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libpostproc.so
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale.so
 				 )	
 	else()
