@@ -23,6 +23,16 @@ if(CC_INSTALL_FFMPEGLIB)
 				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swresample-3.dll
 				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swscale-5.dll
 				 )
+	elseif(CC_BC_LINUX)
+		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswresample.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libpostproc.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale.so
+				 )	
 	else()
 	endif()
 	
