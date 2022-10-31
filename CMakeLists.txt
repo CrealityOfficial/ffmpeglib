@@ -31,6 +31,7 @@ if(CC_INSTALL_FFMPEGLIB)
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavutil.56.dylib
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswresample.3.dylib
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswscale.5.dylib
+			)
 	elseif(CC_BC_LINUX)
 		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so
