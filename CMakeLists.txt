@@ -23,6 +23,14 @@ if(CC_INSTALL_FFMPEGLIB)
 				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swresample-3.dll
 				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swscale-5.dll
 				 )
+	elseif(CC_BC_MAC)
+			set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavcodec.58.dylib
+					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavdevice.58.dylib
+					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavfilter.7.dylib
+					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavformat.58.dylib
+					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavutil.56.dylib
+					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswresample.3.dylib
+					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswscale.5.dylib
 	elseif(CC_BC_LINUX)
 		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so
