@@ -34,12 +34,12 @@ if(CC_INSTALL_FFMPEGLIB)
 			)
 	elseif(CC_BC_LINUX)
 		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswresample.so
-				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale.so
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so.58
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter.so.7
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat.so.58
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil.so.56
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswresample.so.3
+				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale.so.5
 				 )	
 	else()
 	endif()
