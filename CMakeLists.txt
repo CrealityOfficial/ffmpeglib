@@ -33,7 +33,7 @@ if(CC_INSTALL_FFMPEGLIB)
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswscale.5.dylib
 			)
 	elseif(CC_BC_LINUX)
-		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so
+		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so.58
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so.58
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter.so.7
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat.so.58
