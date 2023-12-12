@@ -24,6 +24,16 @@ if(CC_INSTALL_FFMPEGLIB)
 				 ${CMAKE_CURRENT_SOURCE_DIR}/bin/swscale-5.dll
 				 )
 	elseif(CC_BC_MAC)
+                if(CMAKE_HOST_SYSTEM_PROCESSOR STREQUAL "arm64")
+                        set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libavcodec.58.dylib
+                                        ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libavdevice.58.dylib
+                                        ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libavfilter.7.dylib
+                                        ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libavformat.58.dylib
+                                        ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libavutil.56.dylib
+                                        ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libswresample.3.dylib
+                                        ${CMAKE_CURRENT_SOURCE_DIR}/bin_osx-aarch64/libswscale.5.dylib
+                        )			
+		else()
 			set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavcodec.58.dylib
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavdevice.58.dylib
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libavfilter.7.dylib
@@ -32,6 +42,7 @@ if(CC_INSTALL_FFMPEGLIB)
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswresample.3.dylib
 					${CMAKE_CURRENT_SOURCE_DIR}/bin_osX/libswscale.5.dylib
 			)
+                 endif()
 	elseif(CC_BC_LINUX)
 		set(LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.so.58
 				 ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavdevice.so.58
